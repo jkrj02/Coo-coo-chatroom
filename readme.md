@@ -15,3 +15,5 @@
 <img src="img/System structure.png" alt="System structure" style="zoom: 50%;" />
 
 客户端与服务器采用socket通讯，使用json格式作为通讯数据格式。json中封装MsgType，根据MsgType封装其他信息。接口接受json后，首先拆包，根据MsgType进行分类处理。
+
+系统采用MVC架构，客户端和服务端分别有model、view和controller。其中，客户端的controller是ClientMain类，服务端的controller是Server类。
